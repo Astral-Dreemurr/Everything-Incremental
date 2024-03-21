@@ -1,4 +1,6 @@
-from tkinter import *
+from tkinter import Tk
+from tkinter import Button
+from tkinter import Label
 import tkinter.ttk as ttk
 from tkinter import messagebox
 
@@ -143,7 +145,7 @@ def Stattab():
 
 
         def NRUtab():
-            EINRUtab = tk()
+            EINRUtab = Tk()
 
             EINRUtab.title("Everything Incremental Alpha - Normal Realm Upgrades")
             EINRUtab.geometry("300x300")
@@ -151,7 +153,7 @@ def Stattab():
 
             
             def S1Utab():
-                EIS1Utab = tk()
+                EIS1Utab = Tk()
 
                 EIS1Utab.title("Everything Incremental Alpha - Sector 1 Upgrades")
                 EIS1Utab.geometry("300x300")
@@ -161,7 +163,7 @@ def Stattab():
 
             
             def S2Utab():
-                EIS2Utab = tk()
+                EIS2Utab = Tk()
                 
                 EIS2Utab.title("Everything Incremental Alpha - Sector 2 Upgrades")
                 EIS2Utab.geometry("300x300")
@@ -171,13 +173,13 @@ def Stattab():
 
             
             def S3Utab():
-                EIS3Utab = tk()
+                EIS3Utab = Tk()
 
                 EIS3Utab.title("Everything Incremental Alpha - Sector 3 Upgrades")
                 EIS3Utab.geometry("300x300")
                 EIS3Utab.resizable(width=True,height=True)
 
-                EIS3utab.mainloop()
+                EIS3Utab.mainloop()
 
             
             S1U=Button(EINRUtab, text = "Sector 1 Upgrades", background = 'yellow', command=S1Utab)
@@ -359,7 +361,8 @@ def Coretab():
 
     CoreCount = '111,978'
 
-    CoreStats=Label(EICoretab, text = ('Cores = ', CoreCount), background = 'yellow')
+    CoreStats = Label(EICoretab, text='Cores = ' + str(CoreCount), background='yellow')
+    
 
     def CoreRanktab():
         EICRtab = Tk()
@@ -563,7 +566,7 @@ def Informationtab():
     Devs=Button(EIInfotab, text = 'Developers', background = 'pink', command=Developers)
     Versions=Button(EIInfotab, text = 'Current Version', background = 'light blue', command=VersionInfo)
     ModVersions=Button(EIInfotab, text = 'Current Mod Version', background = 'blue', command=ModVersionInfo)
-    SpecialThanks=Button(EIInfotab, text = 'Special Thanks', background = 'yellow', command=SpecialThanks)
+    SpecialThank=Button(EIInfotab, text = 'Special Thanks', background = 'yellow', command=SpecialThanks)
     Discord=Button(EIInfotab, text = 'Link to Discord!', background = 'dark blue', command=DiscordLinks)
     Donation=Button(EIInfotab, text = 'Donation!', background = 'lime', command=DonationLinks)
     NotationInfo=Button(EIInfotab, text = 'Notations', background = 'light green', command=NotationsInfo)
@@ -573,7 +576,7 @@ def Informationtab():
     Devs.pack()
     Versions.pack()
     ModVersions.pack()
-    SpecialThanks.pack()
+    SpecialThank.pack()
     Discord.pack()
     Donation.pack()
     NotationInfo.pack()
