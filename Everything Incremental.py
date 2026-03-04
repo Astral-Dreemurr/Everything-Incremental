@@ -3285,7 +3285,7 @@ def TheFormulatab():
 
             
             def MinutesResetButtonClicked():
-                MinutesResetresponse = messagebox.askyesnocancel("Minutes Reset", "Do you want to Reset your Seconds to Minutes?! | RequirementsL 60+ Seconds | 60 Seconds -> 1 Minute")
+                MinutesResetresponse = messagebox.askyesnocancel("Minutes Reset", "Do you want to Reset your Seconds to Minutes?! | Requirements: 60+ Seconds | 60 Seconds -> 1 Minute")
 
                 if MinutesResetresponse == 1:
                     if SecondAmount >= 60:
@@ -3296,9 +3296,13 @@ def TheFormulatab():
                     messagebox.showinfo("Cancelled", "You cancelled the performation of Minutes Reset.")
                 else:
                     messagebox.showinfo("Cancelled", "You cancelled the performation of Minutes Reset.")
+
+            def HoursResetButtonClicked():
+                HoursResetresponse = messagebox.askyesnocancel("Hours Reset", "Do you want to Reset your Minutes to Hours?! | Requirements: 60+ Minutes | 60 Minutes -> 1 Hour")
             
             TimeUpgrades=Button(TimeResetsFrame, text = 'Time Upgrades', command=TimeUpgradestab)
             MinutesReset=Button(TimeResetsFrame, text = 'Reset For Minutes', command=MinutesResetButtonClicked)
+            HoursReset=Button(TimeResetsFrame, text = 'Reset For Hours', command=HoursResetButtonClicked)
 
             TimeUpgrades.pack()
             MinutesReset.pack()
@@ -4339,3 +4343,4 @@ InfoSettingsFrame.pack(side='right', fill='both', expand=True)
 EI.mainloop()
 
 ########################################################################################################
+
