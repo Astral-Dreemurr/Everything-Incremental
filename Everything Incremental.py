@@ -3007,7 +3007,7 @@ def TheFormulatab():
         def ZoneAMaintab():
             EIZoneAMaintab = Tk()
 
-            EIZoneAMaintab.title("Everything Incremental Alpha - A - Main")
+            EIZoneAMaintab.title("Everything Incremental Alpha - A-Main")
 
 
             def APowertab():
@@ -3023,11 +3023,21 @@ def TheFormulatab():
             def Alphatab():
                 EIAlphatab = Tk()
 
-                EIAlphatab.title("Everything Incremental Alpha - Alpha")
+                EIAlphatab.title("Everything Incremental Alpha - α")
                 EIAlphatab.geometry("300x300")
                 EIAlphatab.resizable(width=True,height=True)
 
                 EIAlphatab.mainloop()
+
+
+            def Alephtab():
+                EIAlephtab = Tk()
+                
+                EIAlephtab.title("Everything Incremental Alpha - א")
+                EIAlephtab.geometry("300x300")
+                EIAlephtab.resizable(width=True,height=True)
+                
+                EIAlephtab.mainloop()
 
 
             def Abolitytab():
@@ -3040,7 +3050,7 @@ def TheFormulatab():
                 EIAbolitytab.mainloop()
 
             APower=Button(EIZoneAMaintab, text = 'A Power', command=APowertab)
-            Alpha=Button(EIZoneAMaintab, text = 'Alpha', command=Alphatab)
+            Alpha=Button(EIZoneAMaintab, text = 'α', command=Alphatab)
             Abolity=Button(EIZoneAMaintab, text = 'Abolity', command=Abolitytab)
 
             APower.pack()
@@ -3048,10 +3058,25 @@ def TheFormulatab():
             Abolity.pack()
 
             EIZoneAMaintab.mainloop()
+            
 
-        ZoneAMain=Button(EIZoneAMaintab, text = 'Main of A', command=ZoneAMaintab)
-        ZoneASub=Button(EIZoneASubtab, text = 'Sub of A', command=ZoneASubtab)
-        ZoneAReset=Button(EIZoneAResettab, text = 'Reset of A', command=ZoneAResettab)
+        def ZoneASubtab():
+            EIZoneASubtab = Tk()
+            
+            EIZoneASubtab.title("Everything Incremental Alpha - A-Sub")
+            EIZoneASubtab.geometry("300x300")
+            EIZoneASubtab.resizable(width=True,height=True)
+            
+            EIZoneASubtab.mainloop()
+
+        
+        def ZoneAResettab():
+            EIZoneAResettab = Tk()
+            EIZoneASubtab
+
+        ZoneAMain=Button(EIZoneAMaintab, text = 'A-Main', command=ZoneAMaintab)
+        ZoneASub=Button(EIZoneASubtab, text = 'A-Sub', command=ZoneASubtab)
+        ZoneAReset=Button(EIZoneAResettab, text = 'A-Reset', command=ZoneAResettab)
 
         ZoneAMain.pack()
         ZoneASub.pack()
@@ -4343,4 +4368,5 @@ InfoSettingsFrame.pack(side='right', fill='both', expand=True)
 EI.mainloop()
 
 ########################################################################################################
+
 
