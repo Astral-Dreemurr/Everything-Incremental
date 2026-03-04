@@ -164,7 +164,7 @@ def Stattab():
 
 
         def NRUtab():
-            EINRUtab = tk()
+            EINRUtab = Tk()
 
             EINRUtab.title("Everything Incremental Alpha - Normal Realm Upgrades")
             EINRUtab.geometry("300x300")
@@ -172,7 +172,7 @@ def Stattab():
 
             
             def S1Utab():
-                EIS1Utab = tk()
+                EIS1Utab = Tk()
 
                 EIS1Utab.title("Everything Incremental Alpha - Sector 1 Upgrades")
                 EIS1Utab.geometry("300x300")
@@ -182,7 +182,7 @@ def Stattab():
 
             
             def S2Utab():
-                EIS2Utab = tk()
+                EIS2Utab = Tk()
                 
                 EIS2Utab.title("Everything Incremental Alpha - Sector 2 Upgrades")
                 EIS2Utab.geometry("300x300")
@@ -192,7 +192,7 @@ def Stattab():
 
             
             def S3Utab():
-                EIS3Utab = tk()
+                EIS3Utab = Tk()
 
                 EIS3Utab.title("Everything Incremental Alpha - Sector 3 Upgrades")
                 EIS3Utab.geometry("300x300")
@@ -3072,7 +3072,13 @@ def TheFormulatab():
         
         def ZoneAResettab():
             EIZoneAResettab = Tk()
-            EIZoneASubtab
+            
+            EIZoneAResettab.title("Everything Incremental Alpha - A-Reset")
+            EIZoneAResettab.geometry("300x300")
+            EIZoneAResettab.resizable(width=True,height=True)
+            
+            EIZoneAResettab.mainloop()
+            
 
         ZoneAMain=Button(EIZoneAMaintab, text = 'A-Main', command=ZoneAMaintab)
         ZoneASub=Button(EIZoneASubtab, text = 'A-Sub', command=ZoneASubtab)
@@ -3217,14 +3223,14 @@ def TheFormulatab():
             EICPowertab.mainloop()
 
 
-        def Cetatab():
-            EICetatab = Tk()
+        def Cetitab():
+            EICetitab = Tk()
             
-            EICetatab.title("Everything Incremental Alpha - Ceta")
-            EICetatab.geometry("300x300")
-            EICetatab.resizable(width=True,height=True)
+            EICetitab.title("Everything Incremental Alpha - Ceta")
+            EICetitab.geometry("300x300")
+            EICetitab.resizable(width=True,height=True)
 
-            EICetatab.mainloop()
+            EICetitab.mainloop()
 
 
         def Candytab():
@@ -3315,8 +3321,8 @@ def TheFormulatab():
                 if MinutesResetresponse == 1:
                     if SecondAmount >= 60:
                         messagebox.showinfo("Reset Done!", "Your", SecondAmount, "Seconds are converted to", SecondAmount/60, "Minutes!")
-                elif SecondAmount < 60:
-                    messagebox.showerror("Failed", "Not enough Seconds!")
+                    elif SecondAmount < 60:
+                        messagebox.showerror("Failed", "Not enough Seconds!")
                 elif response == 0:
                     messagebox.showinfo("Cancelled", "You cancelled the performation of Minutes Reset.")
                 else:
@@ -3324,6 +3330,17 @@ def TheFormulatab():
 
             def HoursResetButtonClicked():
                 HoursResetresponse = messagebox.askyesnocancel("Hours Reset", "Do you want to Reset your Minutes to Hours?! | Requirements: 60+ Minutes | 60 Minutes -> 1 Hour")
+                
+                if HoursResetresponse == 1:
+                    if MinuteAmount >= 60:
+                        messagebox.showinfo("Reset Done!", "Your", MinuteAmount, "Minutes are converted to", MinuteAmount/60, "Hours!")
+                    elif MinuteAmount < 60:
+                        messagebox.showerror("Failed", "Not enough Minutes!")
+                elif response == 0:
+                    messagebox.showinfo("Cancelled", "You cancelled the performation of Hours Reset.")
+                else:
+                    messagebox.showinfo("Cancelled", "You cancelled the performation of Hours Reset.")
+                        
             
             TimeUpgrades=Button(TimeResetsFrame, text = 'Time Upgrades', command=TimeUpgradestab)
             MinutesReset=Button(TimeResetsFrame, text = 'Reset For Minutes', command=MinutesResetButtonClicked)
@@ -3335,7 +3352,7 @@ def TheFormulatab():
             EIClockstab.mainloop()
         
         CPower=Button(EIZoneCtab, text = 'C Power', command=CPowertab)
-        Ceta=Button(EIZoneCtab, text = 'Ceta', command=Cetatab)
+        Ceti=Button(EIZoneCtab, text = 'Ceti', command=Cetitab)
         Candy=Button(EIZoneCtab, text = 'Candy!!!!', command=Candytab)
         Clocks=Button(EIZoneCtab, text = 'Clocks', command=Clockstab)
 
@@ -4368,5 +4385,6 @@ InfoSettingsFrame.pack(side='right', fill='both', expand=True)
 EI.mainloop()
 
 ########################################################################################################
+
 
 
