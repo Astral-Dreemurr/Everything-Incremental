@@ -7,7 +7,6 @@ import tkinter.ttk as ttk
 from tkinter import messagebox
 from random import randint
 
-#Never Forget to make after Endorsements :skull:
 ########################################################################################################
 
 EI = Tk()
@@ -43,7 +42,6 @@ def Stattab():
     EIStattab.title("Everything Incremental Alpha - Stats")
     EIStattab.geometry("300x300")
     EIStattab.resizable(width=True,height=True)
-
 
 
     def NormalStattab():
@@ -204,10 +202,20 @@ def Stattab():
             S1U=Button(EINRUtab, text = "Sector 1 Upgrades", background = 'yellow', command=S1Utab)
             S2U=Button(EINRUtab, text = "Sector 2 Upgrades", background = 'lime', command=S2Utab)
             S3U=Button(EINRUtab, text = "Sector 3 Upgrades", background = 'light grey', command=S3Utab)
+            S4U=Button(EINRUtab, text = 'Sector 4 Upgrades', background = 'blue', command=S4Utab)
+            S5U=Button(EINRUtab, text = 'Sector 5 Upgrades', background = 'dark grey', command=S5Utab)
+            S6U=Button(EINRUtab, text = 'Sector 6 Upgrades', background = 'black', command=S6Utab)
+            S7U=Button(EINRUtab, text = 'Sector 7 Upgrades', background = 'purple', command=S7Utab)
+            S8U=Button(EINRUtab, text = 'Sector 8 Upgrades', background = 'orange', command=S8Utab)
 
             S1U.pack()
             S2U.pack()
             S3U.pack()
+            S4U.pack()
+            S5U.pack()
+            S6U.pack()
+            S7U.pack()
+            S8U.pack()
 
             EINRUtab.mainloop()
 
@@ -1089,6 +1097,31 @@ def Challengetab():
 
         EINormalChaltab.mainloop()
 
+
+    def GrassEraChaltab():
+        EIGrassEraChaltab = Tk()
+        
+        EIGrassEraChaltab.title("Everything Incremental Alpha - Grass Era Challenges")
+        EIGrassEraChaltab.geometry("300x300")
+        EIGrassEraChaltab.resizable(width=True,height=True)
+        
+
+        def GrassAccomplishmentsstab():
+            EIGrassAccomplishmentstab = Tk()
+            
+            EIGrassAccomplishmentstab.title("Everything Incremental Alpha - Grass Accomplishments")
+            EIGrassAccomplishmentstab.geometry("300x300")
+            EIGrassAccomplishmentstab.resizable(width=True,height=True)
+            
+            EIGrassAccomplishmentstab.mainloop()
+
+
+        GrassAccomplishments=Button(EIGrassEraChaltab, text = 'Grass Accomplishments', background = 'green', command=GrassAccomplishmentstab)
+
+        GrassAccomplishments.pack()
+        
+        EIGrassEraChaltab.mainloop()
+
     
     def IDPDimtab():
         EIIDPDimtab = Tk()
@@ -1148,14 +1181,26 @@ def Challengetab():
             EIAtomChaltab.mainloop()
 
 
+        def SNChaltab():
+            EISNChaltab = Tk()
+            
+            EISNChaltab.title("Everything Incremental Alpha - Supernova Challenges (IMR)")
+            EISNChaltab.geometry("300x300")
+            EISNChaltab.resizable(width=True,height=True)
+            
+            EISNChaltab.mainloop()
+
+
         RageChal=Button(EIMEChaltab, text = 'Rage Challenges', background = 'red', command=RageChaltab)
         BHChal=Button(EIMEChaltab, text = 'Black Hole Challenges', background = 'yellow', command=BHChaltab)
         AtomChal=Button(EIMEChaltab, text = 'Atom Challenges', background = 'blue', command=AtomChaltab)
+        SNChal=Button(EIMEChaltab, text = 'Supernova Challenges', background = 'pink', command=SNChaltab)
 
 
         RageChal.pack()
         BHChal.pack()
         AtomChal.pack()
+        SNChal.pack()
 
         EIMEChaltab.mainloop()
 
@@ -1179,6 +1224,7 @@ def Challengetab():
 
 
     NormalChal=Button(EIChallengetab, text = 'Normal Challenges', background = 'yellow', command=NormalChaltab)
+    GEChal=Button(EIChallengetab, text = 'Grass Era Challenges', background = 'green', command=GrassEraChaltab)
     IDPDim=Button(EIChallengetab, text = 'Impossible Doomed Purge Dimensions', background = 'dark blue', command=IDPDimtab)
     PMChal=Button(EIChallengetab, text = 'Pre-Mass Challenges', background = 'light grey', command=PreMassChaltab)
     MEChal=Button(EIChallengetab, text = 'Mass Era Challenges', background = 'grey', command=MassEraChaltab)
@@ -1187,6 +1233,7 @@ def Challengetab():
 
 
     NormalChal.pack()
+    GEChal.pack()
     IDPDim.pack()
     PMChal.pack()
     MEChal.pack()
@@ -4385,6 +4432,7 @@ InfoSettingsFrame.pack(side='right', fill='both', expand=True)
 EI.mainloop()
 
 ########################################################################################################
+
 
 
 
