@@ -196,7 +196,57 @@ def Stattab():
                 EIS3Utab.geometry("300x300")
                 EIS3Utab.resizable(width=True,height=True)
 
-                EIS3utab.mainloop()
+                EIS3Utab.mainloop()
+
+
+            def S4Utab():
+                EIS4Utab = Tk()
+
+                EIS4Utab.title("Everything Incremental Alpha - Sector 4 Upgrades")
+                EIS4Utab.geometry("300x300")
+                EIS4Utab.resizable(width=True,height=True)
+
+                EIS4Utab.mainloop()
+
+
+            def S5Utab():
+                EIS5Utab = Tk()
+
+                EIS5Utab.title("Everything Incremental Alpha - Sector 5 Upgrades")
+                EIS5Utab.geometry("300x300")
+                EIS5Utab.resizable(width=True,height=True)
+
+                EIS5Utab.mainloop()
+
+
+            def S6Utab():
+                EIS6Utab = Tk()
+
+                EIS6Utab.title("Everything Incremental Alpha - Sector 6 Upgrades")
+                EIS6Utab.geometry("300x300")
+                EIS6Utab.resizable(width=True,height=True)
+
+                EIS6Utab.mainloop()
+
+
+            def S7Utab():
+                EIS7Utab = Tk()
+
+                EIS7Utab.title("Everything Incremental Alpha - Sector 7 Upgrades")
+                EIS7Utab.geometry("300x300")
+                EIS7Utab.resizable(width=True,height=True)
+
+                EIS7Utab.mainloop()
+
+
+            def S8Utab():
+                EIS8Utab = Tk()
+
+                EIS8Utab.title("Everything Incremental Alpha - Sector 8 Upgrades")
+                EIS8Utab.geometry("300x300")
+                EIS8Utab.resizable(width=True,height=True)
+
+                EIS8Utab.mainloop()
 
             
             S1U=Button(EINRUtab, text = "Sector 1 Upgrades", background = 'yellow', command=S1Utab)
@@ -3055,6 +3105,9 @@ def TheFormulatab():
             EIZoneAMaintab = Tk()
 
             EIZoneAMaintab.title("Everything Incremental Alpha - A-Main")
+            EIZoneAMaintab.geometry("300x300")
+            EIZoneAMaintab.resizable(width=True,height=True)
+
 
 
             def APowertab():
@@ -3098,10 +3151,12 @@ def TheFormulatab():
 
             APower=Button(EIZoneAMaintab, text = 'A Power', command=APowertab)
             Alpha=Button(EIZoneAMaintab, text = 'α', command=Alphatab)
+            Aleph=Button(EIZoneAMaintab, text = 'א', command=Alephtab)
             Abolity=Button(EIZoneAMaintab, text = 'Abolity', command=Abolitytab)
 
             APower.pack()
             Alpha.pack()
+            Aleph.pack()
             Abolity.pack()
 
             EIZoneAMaintab.mainloop()
@@ -3127,9 +3182,9 @@ def TheFormulatab():
             EIZoneAResettab.mainloop()
             
 
-        ZoneAMain=Button(EIZoneAMaintab, text = 'A-Main', command=ZoneAMaintab)
-        ZoneASub=Button(EIZoneASubtab, text = 'A-Sub', command=ZoneASubtab)
-        ZoneAReset=Button(EIZoneAResettab, text = 'A-Reset', command=ZoneAResettab)
+        ZoneAMain=Button(EIZoneAtab, text = 'A-Main', command=ZoneAMaintab)
+        ZoneASub=Button(EIZoneAtab, text = 'A-Sub', command=ZoneASubtab)
+        ZoneAReset=Button(EIZoneAtab, text = 'A-Reset', command=ZoneAResettab)
 
         ZoneAMain.pack()
         ZoneASub.pack()
@@ -4432,6 +4487,7 @@ InfoSettingsFrame.pack(side='right', fill='both', expand=True)
 EI.mainloop()
 
 ########################################################################################################
+
 
 
 
